@@ -56,6 +56,11 @@
                         <a href="#portfolio">Projects</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#contact" class="portfolio-link" data-toggle="modal">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="https://drive.google.com/open?id=0B-ydlfoJ78M0MkcxX2d6cDVUeGc">Resume</a>
                     </li>
                 </ul>
@@ -113,30 +118,30 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <h2 class="project-description-title">Deep Learning Projects</h2>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h2 class="project-description-title">Self Driving Car Projects</h2>
                             </div>
                         </div>
                         <img src="img/portfolio/game.png" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <h2 class="project-description-title">Other Projects</h2>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Cabin">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Cabin">
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
         </div>
@@ -180,14 +185,20 @@
 
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">            
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                  </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2 class="projects">Coming Soon</h2>
+                            <h2 class="project-description-title">Coming Soon</h2>
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p> Coming Soon </p>
+                            <p class="projects"> Coming Soon </p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -197,15 +208,44 @@
         </div>
     </div>
     
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">            
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2 class="projects">Coming Soon</h2>
+                            <h2 class="project-description-title">Self Driving 1/10 Scale RC Car</h2>
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p class="projects">To do!</p>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content ">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="project-description-title">Coming Soon</h2>
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p> Coming Soon </p>
+                            <p class="projects"> Coming Soon </p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -215,15 +255,21 @@
         </div>
     </div>
     
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">            
+    <div class="portfolio-modal modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content-contact">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2 class="projects">Coming Soon</h2>
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p> Coming Soon </p>
+                        <div class="modal-body-custom">
+                            <h2 class="project-description-title">Contact Me</h2>
+                            <p class="contact">dresimpelo [at] gmail [dot] com</p>
+                            <p class="contact">Thanks for visiting!</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
