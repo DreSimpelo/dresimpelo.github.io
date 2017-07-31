@@ -1,3 +1,8 @@
+---
+layout: post
+mathjax: true
+---
+
 # Lane Finding Project
 
 #### Udacity Self Driving Car Nanodegree Project #4
