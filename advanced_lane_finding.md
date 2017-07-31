@@ -42,7 +42,7 @@ To compute the camera matrix and distortion coefficients, I utilized OpenCV's fi
   <img src="assets/advanced_lane_finding/Distorted.png">
   <div class="figcaption">
 
-```nohighlight
+```
  Example of a (presumably distorted) image
 ```
 
