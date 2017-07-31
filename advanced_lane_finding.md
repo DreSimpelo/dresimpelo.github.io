@@ -148,13 +148,13 @@ We'll next observe the Grayscale contributions:
 <div class="figcaption">
 
 ```
-G channel after Binary Threshold
+Gray channel after Binary Threshold
 ```
 
 </div>
 </div>
 
-Next, we'll combine this images to create a new binary image.
+Next, we'll combine these images to create a new binary image.
 
 </div>
 </div>
@@ -164,7 +164,7 @@ Next, we'll combine this images to create a new binary image.
 <div class="figcaption">
 
 ```
-G channel after Binary Threshold
+Binary Thresholded Gray and S channels combined
 ```
 
 </div>
