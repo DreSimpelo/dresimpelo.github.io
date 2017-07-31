@@ -1,6 +1,7 @@
 ---
 layout: page
 mathjax: true
+permalink: /advanced_lane_finding/
 ---
 
 # Lane Finding Project

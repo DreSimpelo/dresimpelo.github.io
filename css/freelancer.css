@@ -249,7 +249,7 @@ section.background{
   -moz-transition: all ease 0.5s;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: .6;
+  opacity: .8;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
@@ -258,6 +258,14 @@ section.background{
   font-size: 20px;
   text-align: center;
   top: 30%;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content rc-car-hover {
+  position: inherit;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
   color: white;
   align-content: center;
 }
@@ -587,7 +595,23 @@ div#maincontent {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+#cf {
+  position:inherit;
+  margin:0 auto;
+}
 
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0.2;
+}
 
 /* Custom CSS for pages */
 /* Style from cs213n notes */
