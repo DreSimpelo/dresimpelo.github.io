@@ -19,8 +19,16 @@ The first part of my pipeline is to undistort the input image coming from the ca
 
 To compute the camera matrix and distortion coefficients, I utilized OpenCV's findChessboardCorners method to find the corners of the chessboards in 19/20 of the calibration images provided, and stored the image and object points (to later pass to calibrateCamera). I left 1/20 of the images of the calibration set out to use as a test image just as a sanity check to make sure my un-distortion was working. After passing my object and image points into the calibrateCamera method, I obtained the camera matrix and distortion coefficients. Using the new found matrix and set of coefficients, we can use them to leverage openCV's undistort method. 
 
-![](assets/advanced_lane_finding/TestImage.png)
 
+
+<div class="fig figcenter fighighlight">
+
+<img src="assets/advanced_lane_finding/TestImage.png">
+  <div class="figcaption">
+
+    To the left is the unaltered image from a camera. To the right is the original image passed through a undistortion function. 
+  </div>
+</div>
 
 #### Pipeline (test images)
 
@@ -29,11 +37,25 @@ To compute the camera matrix and distortion coefficients, I utilized OpenCV's fi
 
 ***(Code for this section can be found in the "advanced_lane_finding_functions.py" file, lines 1-16. As well as the  Section section in the jupyter notebook)***
 
-##### Here is an example of a (distorted) image:
-![](assets/advanced_lane_finding/Distorted.png)
+<div class="fig figcenter fighighlight">
 
-##### And here is that same image undistorted:
-![](assets/advanced_lane_finding/Undistorted.png)
+  <img src="assets/advanced_lane_finding/Distorted.png">
+  <div class="figcaption">
+
+```nohighlight
+ Example of a (presumably distorted) image
+```
+
+  </div>
+</div>
+
+<div class="fig figcenter fighighlight">
+  <img src="assets/advanced_lane_finding/Undistorted.png">
+  <div class="figcaption">
+
+```
+ Example of an undistorted image
+```
 
 The distortion correction was calculated via camera calibration and has been applied to each image in the project.
 
@@ -50,45 +72,157 @@ The distortion correction was calculated via camera calibration and has been app
 
 If we take a look at an example image and how it appears in different color channels, we can see some channels are better at picking out colors than others. Here I have plotted the RGB and HLS color channels separately as well the Grayscale image. 
 
-![](assets/advanced_lane_finding/color_chans.png)
+ </div>
+</div>
 
-For this project, I used Grayscale image space, the R channel from the RGB color space and the S channel from the HLS color space. Originally, my code looked through all of the color spaces and tried to find which color space would give the clearest lines (automated by comparing measures of how well polyfit fit the data), but this was way too expensive to do for video, so I ended up selecting just the Grayscale, R channel, and S channel images. I hand-tuned the different thresholds for the S channel and Grayscale images, and **combined** their results to give me a single thresholded binary image. I also used sobel thresholds on the Gray, R and S channels to further ensure I obtain lane lines. 
+<div class="fig figcenter fighighlight">
+  <img src="assets/advanced_lane_finding/color_chans.png">
+  <div class="figcaption">
+
+```
+Separate color channels.
+```
+
+  </div>
+</div>
+
+For this project, I used Grayscale image space, the R channel from the RGB color space and the S channel from the HLS color space. Originally, my code looked through all of the color spaces and tried to find which color space would give the clearest lines (automated by comparing measures of how well polyfit fit the data), but this was way too expensive to do for video, so I ended up selecting just the Grayscale, R channel, and S channel images. I hand-tuned the different thresholds for the S channel and Grayscale images, and combined their results to give me a single thresholded binary image. I also used sobel thresholds on the Gray, R and S channels to further ensure I obtain lane lines. 
 
 Here is my example of a binary image result: 
 #### Raw Transformed Pre-Binary Thresholded Image:
- ![](assets/advanced_lane_finding/warped.png)
+
+</div>
+  </div>
+
+  <div class="fig figcenter fighighlight">
+  <img src="assets/advanced_lane_finding/warped.png">
+  <div class="figcaption">
+
+```
+Raw transformed pre-filtered image
+```
+
+  </div>
+
+</div>
 
 We'll first observe the S channel contributions:
-#### S Channel:
- ![](assets/advanced_lane_finding/S.png)  
-#### S: Binary Thresholded:
-![](assets/advanced_lane_finding/bin_S.png)
+
+</div>
+</div>
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/S.png">
+<div class="figcaption">
+
+```
+S Channel (before binary threshold)
+```
+
+</div>
+</div>  
+
+#### :
+
+</div>
+</div>
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/bin_S.png">
+<div class="figcaption">
+
+```
+S channel after a Binary Threshold is applied
+```
+
+</div>
+</div>
 
 The main reason I am using the S channel, is because it does well (at least better than the other channels) at picking out yellow lane lines. I am not too worried that it is missing some of the right lane lines, since we are using a combination of other channels. 
 
 We'll next observe the Grayscale contributions:
-#### G: Binary Thresholded:
-![](assets/advanced_lane_finding/bin_G.png)
+
+</div>
+</div>
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/bin_G.png">
+<div class="figcaption">
+
+```
+G channel after Binary Threshold
+```
+
+</div>
+</div>
 
 Next, we'll combine this images to create a new binary image.
-#### G and S Combined:
-![](assets/advanced_lane_finding/added_G_S.png)
+
+</div>
+</div>
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/added_G_S.png">
+<div class="figcaption">
+
+```
+G channel after Binary Threshold
+```
+
+</div>
+</div>
 
 G and S combined gives us better information than just any single color channel. I further tried to look for more useful filters of the G and S channel by utilizing the Sobel gradient filters. 
 
-#### Sobel applied to the S channel:
-![](assets/advanced_lane_finding/sobel_S.png)
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/sobel_S.png">
+<div class="figcaption">
 
-#### Sobel applied to the Grayscale image:
-![](assets/advanced_lane_finding/sobel_G.png)
+```
+Sobel applied to the S channel
+```
 
-#### Combining Sobel applied to S and G:
-![](assets/advanced_lane_finding/added_sobel.png)
+</div>
+</div>
 
-Although it appears as if the Sobel wont add much more information than previously extracted from the S and G color channels alone, it does help later when S and G struggle on their own. 
+![]()
 
-#### Combining Sobel applied to S and G, as well as the Binary Thresholded S and G:
-![](assets/advanced_lane_finding/added_sobel_S_G.png)
+
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/sobel_G.png">
+<div class="figcaption">
+
+```
+Sobel applied to the Grayscale image
+```
+
+</div>
+</div>
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/added_sobel.png">
+<div class="figcaption">
+
+```
+Combining Sobel applied to S and G
+```
+
+</div>
+</div>
+
+Although it appears as if the Sobel won't add much more information than previously extracted from the S and G color channels alone, it does help later when S and G struggle on their own. 
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/added_sobel_S_G.png">
+<div class="figcaption">
+
+```
+Combining Sobel applied to S and G, as well as the Binary Thresholded S and G
+```
+
+</div>
+</div>
 
 *OpenCV function or other method has been used to correctly rectify each image to a "birds-eye view".*
 ---
@@ -97,12 +231,29 @@ Although it appears as if the Sobel wont add much more information than previous
 
 To do the perspective transform, I selected 4 static anchor points (or source points). In my previous version, I tried to look for the best anchor points for a specific frame, but it was way to expensive to apply to videos, and I learned that having static source points works very well. Instead of having the bottom anchor points be near the lane line, I decided to have them on the edge of the image.
 
-![](assets/advanced_lane_finding/source_points.png)
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/source_points.png">
+<div class="figcaption">
 
-Using the "getPerspectiveTransform" function from OpenCV, I was able to get a transformation matrix M using the mentioned source/anchor points, as well a set of user defined "destination" points. We can use "getPerspectiveTransform" to get the inverse of M by switching the arguments of the source and destination points.
+```
+4 Anchor points for the perspective transformation
+```
 
-Here is an example of transforming an image with the M matrix:
-![](assets/advanced_lane_finding/warped.png)
+</div>
+</div>
+
+Using the "getPerspectiveTransform" function from OpenCV, I was able to get a transformation matrix M using the mentioned source/anchor points, as well a set of user defined "destination" points. We can use "getPerspectiveTransform" to get the inverse of M by switching the arguments of the source and destination points. 
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/warped.png">
+<div class="figcaption">
+
+```
+Example of transforming an image with the M matrix
+```
+
+</div>
+</div>
 
 Although we get a kind of skewed version of the lane lines due to the bottom of the source points being far from the lane lines, it turns out to be okay since this perspective allows us to extract separate information for the left and right lines. The transformation can be undone since we know exactly what the inverse of the transform matrix is. 
 
@@ -116,7 +267,17 @@ To start off, I created a Line class to hold all the useful information about th
 In order to get a good starting point for finding where the lines start, we take a look at the initial frame, and plot a histogram of the presence of active pixels for the X axis. We find where the peaks are for this histogram, and use that as a starting point for where to look for lane lines. 
 
 Here we can see (in red) the presence of active pixels along the X-axis. 
-![](assets/advanced_lane_finding/histogram.png)
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/histogram.png">
+<div class="figcaption">
+
+```
+Histogram of active pixels along the y-axis
+```
+
+</div>
+</div>
 
 So I use the maxes of this histogram (left and right half, for the left and right lanes) as a starting points for where we begin searching for lane lines. 
 
@@ -124,8 +285,16 @@ First, I created a function "fit_poly_lanes()" which will take in instances for 
 
 We then use the points found in these windows to fit a 2nd degree polynomial. 
 
-Here is an example output from the fits found from the "fit_poly_lanes()" function:
-![](assets/advanced_lane_finding/fitted_lines.png)
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/fitted_lines.png">
+<div class="figcaption">
+
+```
+Example output from the fits found from the "fit_poly_lanes()" function
+```
+
+</div>
+</div>
 
 After we find the initial set of lines, we can then skip the step of splitting the image into 9 sections, and doing a search for pixels. We do this by leveraging the fact that adjacent frames in a video are not so different from each other, so we can use the previously found 2nd degree polynomial fit, and pad that to create a new area to search for points. 
 
@@ -144,24 +313,29 @@ For Y, I used the value 40, since it should be in "real world" units (m). I foun
 
 I used the fit polynomials to solve for when the image is at the max y value (The bottom of the image), to find the base of each line. I used this information to find where the center of the lane is located, so that I could also measure the deviation of the midpoint of the lane from the center of the image.
 
-Here is an example of the curvature found, as well as the relative distance from the center (assuming 0 is perfectly centered):
-![](assets/advanced_lane_finding/curve_center.png)
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/curve_center.png">
+<div class="figcaption">
 
-*The fit from the rectified image has been warped back onto the original image and plotted to identify the lane boundaries. This should demonstrate that the lane boundaries were correctly identified.*
----
+```
+Example of the curvature found, as well as the relative distance from the center (assuming 0 is perfectly centered). The lane lines are detected and are plotted back (after going through the previously described functions to fit polynomials) onto the road with the inverse transformation matrix.
+```
 
-***(Code for this section can be found in the "advanced_lane_finding_functions.py" file, lines 327-345. As well as the Final Section section in the jupyter notebook)***
-
-Here is an example image of my result plotted back down onto the road such that the lane area is identified clearly:
-
-Here is the undistorted image, before the perspective transform:
-![](assets/advanced_lane_finding/s_points.png)
-
-Here is the transformed view:
-![](assets/advanced_lane_finding/s_warped.png)
+</div>
+</div>
 
 And here is the result plotted back down (after going through the previously described functions to fit polynomials) onto the road with the inverse transformation:
-![](assets/advanced_lane_finding/s_final.png)
+
+<div class="fig figcenter fighighlight">
+<img src="assets/advanced_lane_finding/s_final.png">
+<div class="figcaption">
+
+```
+Example of resulting output of the final pipeline
+```
+
+</div>
+</div>
 
 #### Pipeline (video)
 
@@ -171,8 +345,6 @@ And here is the result plotted back down (after going through the previously des
 Link to my final video output: https://youtu.be/kW9rJdLdAgI
 
 I leveraged averages of lane line coefficients to smoothen lane line transitions between frames.
-
-
 
 #### Discussion
 

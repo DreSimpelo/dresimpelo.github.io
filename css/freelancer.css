@@ -14,7 +14,7 @@ p.small {
   font-size: 16px;
 }
 p.projects{
-  font-size:1.5em;
+  font-size:1.7em;
   color: white;
 }
 p.contact{
@@ -110,7 +110,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   text-transform: none;
   font-weight: 700;
   font-size: 3.5em;
@@ -135,7 +135,7 @@ header .intro-text .skills {
 }
 .navbar-custom {
   background: #0E2031;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   text-transform: none;
   font-weight: 700;
   border: none;
@@ -150,7 +150,8 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav {
-  letter-spacing: 1px;
+    font-size: 1.3em;
+  letter-spacing: 1.5px;
 }
 .navbar-custom .navbar-nav li a {
   color: white;
@@ -585,4 +586,50 @@ div#maincontent {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Custom CSS for pages */
+/* Style from cs213n notes */
+.figcenter {
+  text-align: center;
+}
+.fig img {
+  max-width: 98%;
+}
+.figleft img {
+  max-width: 50%;
+  float: left;
+  margin-right: 20px;
+}
+.figleft svg {
+  float: left;
+  margin-right: 20px;
+}
+.fighighlight {
+  /* background-color: #f7f6f1; */
+  padding: 20px 4px 20px 4px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  /* box-shadow: 0px 2px 5px #CCC, 0px -2px 5px #CCC; */
+}
+.figcaption {
+  font-weight: 400;
+  font-size: 14px;
+  color: #575651;
+  text-align: justify;
+}
+
+.post-content p {
+  text-align: justify;
+}
+
+.kw {
+  font-size: 16px;
+  color: #08A;
+  margin-left: 10px;
+}
+
+.notyet {
+  background-color: #FEE !important;
 }
