@@ -135,7 +135,7 @@ header .intro-text .skills {
 }
 .navbar-custom {
   background: #0E2031;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: none;
   font-weight: 700;
   border: none;
@@ -150,7 +150,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav {
-    font-size: 1.3em;
+    font-size: 1.1em;
   letter-spacing: 1.5px;
 }
 .navbar-custom .navbar-nav li a {

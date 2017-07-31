@@ -122,8 +122,6 @@ S Channel (before binary threshold)
 </div>
 </div>  
 
-#### :
-
 </div>
 </div>
 
@@ -185,11 +183,8 @@ Sobel applied to the S channel
 </div>
 </div>
 
-![]()
-
-
-
 <div class="fig figcenter fighighlight">
+
 <img src="assets/advanced_lane_finding/sobel_G.png">
 <div class="figcaption">
 
