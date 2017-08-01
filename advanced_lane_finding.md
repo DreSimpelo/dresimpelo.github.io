@@ -5,6 +5,10 @@ permalink: /advanced_lane_finding/
 title: Lane Detection Project
 ---
 
+<div class="youtube">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/kW9rJdLdAgI" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ## Udacity Self Driving Car Nanodegree Project #4
 
 Leveraging camera data of the lane lines you are driving in-between can be really helpful for a self driving car. In this project I created a pipeline to take in an image (this could be a video frame) and highlight the area of the cars current lane. We also calculate useful information such as the curvature of the lanes (estimated in meters) as well as the offset distance from the center of the lane (this could be used to help a car stay centered in its lane). 
@@ -228,7 +232,7 @@ Example of the curvature found, as well as the relative distance from the center
 And here is the result plotted back down (after going through the previously described functions to fit polynomials) onto the road with the inverse transformation:
 
 <div class="fig figcenter fighighlight">
-<img src="/assets/advanced_lane_finding/s_final.png">
+<img class="fig" src="/assets/advanced_lane_finding/s_final.png">
 <div class="figcaption">
 Example of resulting output of the final pipeline
 </div>
