@@ -1,0 +1,15 @@
+<!-- Find-Me -->
+<footer class="text-center">
+  <div class="footer-above">
+    <div class="container">
+      <h2 class="web-presence">{{ site.footer.title }}</h2>
+      <ul class="list-inline">
+        {% for network in site.social %}
+          <li>
+            <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

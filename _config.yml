@@ -1,0 +1,37 @@
+# Site settings
+title: Andre Simpelo's Portfolio
+email: dresimpelo
+url: https://example.github.io
+baseurl: ""
+description: "Andre Simpelo's Project Portfolio"
+keywords: "deep learning,machine learning,ai,artificial intelligence,self driving cars,robotics,guitar,jazz"
+skills: "Programmer, Hacker, Deep Learning Enthusiast"
+meta_author: Simpelo Andre
+name: Andre Simpelo
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+# Footer settings
+footer:
+  title: Web Presence
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
