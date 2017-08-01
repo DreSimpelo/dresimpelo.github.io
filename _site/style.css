@@ -52,13 +52,13 @@ h2.web-presence{
   font-size: 2em;
 }
 h2.projects{
-  padding-bottom: 1em;
+  padding-bottom: 1.2em;
   color: white;
     
   padding-top: 5em;
 }
 h2.projects.font{
-  font-size: font-size: 3em;
+  font-size: font-size: 1.2em;
   padding-top: 25px;
 }
 h2.project-description-title{
@@ -118,8 +118,8 @@ header .intro-text .name {
   display: block;
   font-family: 'Cormorant Garamond', serif;
   text-transform: none;
-  font-weight: 700;
-  font-size: 4em;
+  font-weight: 600;
+  font-size: 3.5em;
   margin-top: -.1em;
   margin-bottom: -.1em;
 }
@@ -128,12 +128,11 @@ header .hi { font-size: 1.3em; }
 
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 6em;
-    letter-spacing: 3px;
+    font-size: 4.5em;
+    letter-spacing: 1px;
   }
 }
 .navbar {
