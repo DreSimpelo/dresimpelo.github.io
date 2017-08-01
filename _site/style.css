@@ -49,7 +49,7 @@ h7{
   font-size: 1.4em;
 }
 h2.web-presence{
-  font-size: 2.2em;
+  font-size: 3em;
 }
 h2.projects{
   padding-bottom: 1em;
@@ -58,7 +58,7 @@ h2.projects{
   padding-top: 5em;
 }
 h2.projects.font{
-  font-size: font-size: 2.2em;
+  font-size: font-size: 3em;
   padding-top: 25px;
 }
 h2.project-description-title{
@@ -109,7 +109,7 @@ header {
 }
 header .container {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 header img {
   display: block;
@@ -226,6 +226,7 @@ section.success {
 section.background{
   background: #2C3E50;
   color: white;
+  padding-top: 0px;
 }
 @media (max-width: 767px) {
   section {
@@ -348,8 +349,8 @@ footer h3 {
 }
 footer .footer-above {
   background-color: #2C3E50;
-  padding-bottom: 1.5em;
-  padding-top: 1em;  
+  padding-bottom: 42px;
+  padding-top: 12px;  
 }
 footer .footer-col {
   margin-bottom: 0px;

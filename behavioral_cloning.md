@@ -6,7 +6,7 @@ title: Behavioral Cloning
 ---
 
 <div class="youtube">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kW9rJdLdAgI?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-8h2U6tdlqA?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 For this project, we had to predict steering angles given (virtual) dashboard camera images. One way to approach this, would be to get a computer to mimic a professional human driver (me!). This is done by logging corresponding steering angles with their temporally paired camera image. A convolutional neural network is a perfect candidate for dealing with pixel data, so lets begin! 
