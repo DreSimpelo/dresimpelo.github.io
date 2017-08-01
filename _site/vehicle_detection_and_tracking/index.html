@@ -45,10 +45,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
-          <a href="#page-top"></a>
+          <a href="/#page-top"></a>
         </li>
         <li class="page-scroll">
-          <a href="#portfolio">Projects</a>
+          <a href="/#portfolio">Projects</a>
         </li>
         <li class="page-scroll">
           <a href="mailto:dresimpelo@gmail.com" class="portfolio-link" data-toggle="modal">
@@ -99,23 +99,25 @@
 
 <p>Concatenating all 3 of these feature representations results in a very long vector for each data image.</p>
 
-<p>Size of feature vectors:</p>
+<div class="divination">
+Size of feature vectors:
 
-<p><script type="math/tex">\text{Color Vector Size} = (\#bins) * (\#Channels)</script>
-<script type="math/tex">\text{Color Vector Size}= 16 * 3</script>
-<script type="math/tex">\text{Color Vector Size} = 48</script></p>
+$$\text{Color Vector Size} = (\#bins) * (\#Channels)$$
+$$\text{Color Vector Size}= 16 * 3$$
+$$\text{Color Vector Size} = 48$$
 
-<p><script type="math/tex">\text{Spatial Vector Bin Size} = (Size_x) * (Size_y)* (\#Channels)</script>
-<script type="math/tex">\text{Spatial Vector Bin Size}= 32*32*3</script>
-<script type="math/tex">\text{Spatial Vector Bin Size} = 3072</script></p>
+$$\text{Spatial Vector Bin Size} = (Size_x) * (Size_y)* (\#Channels)$$
+$$\text{Spatial Vector Bin Size}= 32*32*3$$
+$$\text{Spatial Vector Bin Size} = 3072$$
 
-<p><script type="math/tex">\text{HOG Vector Size} = ((\text{Pixels per cell - 1})*2)* ((\text{Cells per block })*2)* (\text{# Orientation Bins}) * (\#Channels)</script>
-<script type="math/tex">\text{HOG Vector Size}= (7*2)*(2*2)*(9)*(3)</script>
-<script type="math/tex">\text{HOG Vector Size} = 5292</script></p>
+$$\text{HOG Vector Size} = ((\text{Pixels per cell - 1})*2)* ((\text{Cells per block })*2)* (\text{# Orientation Bins}) * (\#Channels)$$
+$$\text{HOG Vector Size}= (7*2)*(2*2)*(9)*(3)$$
+$$\text{HOG Vector Size} = 5292$$
 
-<p><script type="math/tex">\text{Total Feature Vector Size} = \text{Color Vector Size}  + \text{Spatial Vector Bin Size} + \text{HOG Vector Size}</script>
-<script type="math/tex">\text{Total Feature Vector Size} = 48+3072+5292</script>
-<script type="math/tex">\text{Total Feature Vector Size} = 8412</script></p>
+$$\text{Total Feature Vector Size} = \text{Color Vector Size}  + \text{Spatial Vector Bin Size} + \text{HOG Vector Size}$$
+$$\text{Total Feature Vector Size} = 48+3072+5292$$
+$$\text{Total Feature Vector Size} = 8412$$
+</div>
 
 <div class="fig figcenter fighighlight">
 <img class="fig" src="/assets/vehicle_detection_and_tracking/output_images/color_hist.png" />

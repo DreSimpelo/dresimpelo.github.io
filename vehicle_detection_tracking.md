@@ -25,6 +25,7 @@ The final feature vector included not only the HOG features of the 3 channels, b
 
 Concatenating all 3 of these feature representations results in a very long vector for each data image. 
 
+<div class="divination">
 Size of feature vectors:
 
 $$\text{Color Vector Size} = (\#bins) * (\#Channels)$$
@@ -42,7 +43,8 @@ $$\text{HOG Vector Size} = 5292$$
 $$\text{Total Feature Vector Size} = \text{Color Vector Size}  + \text{Spatial Vector Bin Size} + \text{HOG Vector Size}$$
 $$\text{Total Feature Vector Size} = 48+3072+5292$$
 $$\text{Total Feature Vector Size} = 8412$$
- 
+</div>
+
 <div class="fig figcenter fighighlight">
 <img class="fig" src="/assets/vehicle_detection_and_tracking/output_images/color_hist.png">
 <div class="figcaption">

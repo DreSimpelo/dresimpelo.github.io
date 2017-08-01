@@ -660,14 +660,11 @@ div#maincontent {
 }
 /* Page Content styles */
 /* ----------------------------------------------------------*/
-
 .page-content {
   padding: 0px 0;
   color: black;
   background-color: #fff;
 }
-
-
 /* Home styles */
 /* ----------------------------------------------------------*/
 
@@ -851,6 +848,12 @@ div#maincontent {
   text-align: center;
 }
 
+.divination {
+  font-size: 90% ! important
+}
+.divination * {
+  font-size: inherit
+}
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
