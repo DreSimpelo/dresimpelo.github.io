@@ -45,7 +45,7 @@ h6 {
   text-transform: none;
   font-weight: 700;
 }
-h7{
+h7 {
   font-size: 1.4em;
 }
 h2.web-presence{
@@ -54,11 +54,10 @@ h2.web-presence{
 h2.projects{
   padding-bottom: 1.2em;
   color: white;
-    
   padding-top: 5em;
 }
 h2.projects.font{
-  font-size: font-size: 1.2em;
+  font-size: 1.6em;
   padding-top: 25px;
 }
 h2.project-description-title{
@@ -849,6 +848,7 @@ div#maincontent {
 
 .youtube{
   text-align: center;
+  overflow-x: hidden;
 }
 
 .divination {
