@@ -42,7 +42,7 @@ h7{
   font-size: 1.4em;
 }
 h2.web-presence{
-  font-size: 3em;
+  font-size: 2em;
 }
 h2.projects{
   padding-bottom: 1em;
@@ -55,9 +55,8 @@ h2.projects.font{
   padding-top: 25px;
 }
 h2.project-description-title{
-  font-size: 2em;
+  font-size: 1.4em;
   color: white;
-  padding-bottom: 1em;
 }
 hr.star-light,
 hr.star-primary {
@@ -113,7 +112,7 @@ header .intro-text .name {
   font-family: 'Cormorant Garamond', serif;
   text-transform: none;
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 4em;
   margin-top: -.1em;
   margin-bottom: -.1em;
 }
@@ -258,7 +257,7 @@ section.background{
   height: 20px;
   font-size: 20px;
   text-align: center;
-  top: 30%;
+  top: 20%;
   color: white;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content rc-car-hover {
@@ -341,16 +340,14 @@ footer h3 {
   margin-bottom: 30px;
 }
 footer .footer-above {
-  background-color: #2C3E50;
-  padding-bottom: 42px;
-  padding-top: 12px;  
+  background-color: #0E2031;
 }
 footer .footer-col {
   margin-bottom: 0px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #0E2031;
 }
 .btn-outline {
   color: white;

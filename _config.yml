@@ -18,7 +18,7 @@ color:
   secondary-dark: 233140 #A2122F
 # Footer settings
 footer:
-  title: Web Presence
+  title: ""
   email: "Contact: dresimpelo [at] gmail [dot] com"
   thanks: Thanks for dropping by!
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
