@@ -8,7 +8,7 @@
     <meta name="description" content="Andre Simpelo's Project Portfolio">
     <meta name="keywords" content="deep learning,machine learning,ai,artificial intelligence,self driving cars,robotics,guitar,jazz" />
     <meta name="author" content="Simpelo Andre">
-    <link rel="canonical" href="http://localhost:4009/">
+    <link rel="canonical" href="http://localhost:4000/">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -48,10 +48,15 @@
           <a href="#page-top"></a>
         </li>
         <li class="page-scroll">
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">Projects</a>
         </li>
         <li class="page-scroll">
-          <a href="#contact">Contact</a>
+          <a href="mailto:dresimpelo@gmail.com" class="portfolio-link" data-toggle="modal">
+            Contact
+          </a>
+        </li>
+        <li class="page-scroll">
+          <a href="https://drive.google.com/open?id=0B-ydlfoJ78M0MkcxX2d6cDVUeGc">Resume</a>
         </li>
       </ul>
     </div>
@@ -59,6 +64,7 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
+
   <body>
 
   <!-- Content -->
@@ -70,6 +76,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="intro-text">
+          <span class="hi">Hi, my name is</span>
           <span class="name">Andre Simpelo</span>
           <span class="skills">Programmer, Hacker, Deep Learning Enthusiast</span>
         </div>
@@ -85,19 +92,19 @@
       <ul class="list-inline">
         
           <li>
-            <a href="http://twitter.com/jekyllrb" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+            <a href="https://twitter.com/DreSimpelo" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
           </li>
         
           <li>
-            <a href="http://stackoverflow.com/questions/tagged/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
+            <a href="https://www.linkedin.com/in/DreSimpelo" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
           </li>
         
           <li>
-            <a href="http://bitbucket.org/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-bitbucket"></i></a>
+            <a href="https://soundcloud.com/DreSimpelo" class="btn-social btn-outline"><i class="fa fa-fw fa-soundcloud"></i></a>
           </li>
         
           <li>
-            <a href="http://github.com/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+            <a href="https://github.com/DreSimpelo" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
           </li>
         
       </ul>
@@ -111,17 +118,17 @@
       <h2 class="projects font">Projects</h2>
     </div>
     <div class="col-sm-4 portfolio-item">
-      <a href="neural-networks-3/" class="portfolio-link" data-toggle="modal">
+      <a href="behavioral_cloning/" class="portfolio-link" data-toggle="modal">
         <div class="caption">
           <div class="caption-content">
-            <h2 class="project-description-title">Deep Learning Projects</h2>
+            <h2 class="project-description-title">Behavior Cloning</h2>
           </div>
         </div>
-        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Cabin">
+        <img src="assets/behavior_cloning/behavior_cloning.png" class="img-responsive" alt="Cabin">
       </a>
     </div>
     <div class="col-sm-4 portfolio-item">
-      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+      <a href="self_driving_rc_car/" class="portfolio-link" data-toggle="modal">
         <div class="caption">
           <div class="caption-content">
             <h2 class="project-description-title">Self Driving RC Car Project</h2>
@@ -140,7 +147,7 @@
       <a href="advanced_lane_finding/" class="portfolio-link" data-toggle="modal">
         <div class="caption">
           <div class="caption-content">
-            <h2 class="project-description-title">Advanced Lane Finding</h2>
+            <h2 class="project-description-title">Street Lane Line Detection</h2>
           </div>
         </div>
         <img src="assets/advanced_lane_finding/home_page.png" class="img-responsive" alt="Cabin">
@@ -148,230 +155,135 @@
     </div>
   </div>
 </section>
+
+<!-- Portfolio Grid Section -->
+<!--     
+  <section id="portfolio">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>Portfolio</h2>
+                  <hr class="star-primary">
+              </div>
+          </div>
+          <div class="row">
+              
+          </div>
+      </div>
+  </section>  
+-->
+      <!-- Footer-->
+<footer class="text-center">
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Contact: dresimpelo [at] gmail [dot] com
+        </div>
+        <div class="col-lg-12">
+          Thanks for dropping by!
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
       <!-- Portfolio Modals -->
+<!--  -->.
 
-  <div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2 class="project-description-title">Coming Soon</h2>
+            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+            <p class="projects"> Coming Soon </p>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 1</h2>
-              <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2 class="project-description-title">Self Driving RC Car</h2>
+            <img src="assets/rc_car/front_car_real.png" class="img-responsive img-centered" alt="">
+            <p class="projects">To do!</p>
+            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 2</h2>
-              <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2 class="project-description-title">Coming Soon</h2>
+            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
+</div>
 
-  <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
+<div class="portfolio-modal modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content-contact">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 3</h2>
-              <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body-custom">
+            <h2 class="project-description-title">Contact Me</h2>
+            <p class="contact">dresimpelo [at] gmail [dot] com</p>
+            <p class="contact">Thanks for visiting!</p>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 4</h2>
-              <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 6</h2>
-              <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project 5</h2>
-              <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="image-alt">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+</div>
       <!-- jQuery Version 1.11.0 -->
 <script src="/js/jquery-1.11.0.js"></script>
 

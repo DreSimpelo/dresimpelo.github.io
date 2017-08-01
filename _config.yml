@@ -5,9 +5,11 @@ url: https://example.github.io
 baseurl: ""
 description: "Andre Simpelo's Project Portfolio"
 keywords: "deep learning,machine learning,ai,artificial intelligence,self driving cars,robotics,guitar,jazz"
-skills: "Programmer, Hacker, Deep Learning Enthusiast"
 meta_author: Simpelo Andre
+hello: Hi, my name is
 name: Andre Simpelo
+skills: "Programmer, Hacker, Deep Learning Enthusiast"
+
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: 18bc9c #80B3FF
@@ -17,16 +19,18 @@ color:
 # Footer settings
 footer:
   title: Web Presence
+  email: "Contact: dresimpelo [at] gmail [dot] com"
+  thanks: Thanks for dropping by!
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: https://twitter.com/DreSimpelo
+  - title: linkedin
+    url: https://www.linkedin.com/in/DreSimpelo
+  - title: soundcloud
+    url: https://soundcloud.com/DreSimpelo
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/DreSimpelo
 # Build settings
 markdown: kramdown
 permalink: pretty

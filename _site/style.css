@@ -124,28 +124,27 @@ header .intro-text .name {
   margin-top: -.1em;
   margin-bottom: -.1em;
 }
-header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
-}
+header .intro-text .skills { font-size: 1.3em; }
+header .hi { font-size: 1.3em; }
+
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 5em;
-  }
-  header .intro-text .skills {
-    font-size: 3em;
+    font-size: 6em;
   }
 }
-.navbar-custom {
+.navbar {
   background: #0E2031;
   font-family: 'Open Sans', sans-serif;
   text-transform: none;
   font-weight: 700;
   border: none;
+}
+.navbar-custom .navbar-brand {
+  color: white;
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -157,7 +156,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav {
-    font-size: 1.1em;
+  font-size: 1.1em;
   letter-spacing: 1.5px;
 }
 .navbar-custom .navbar-nav li a {
@@ -352,7 +351,7 @@ footer .footer-above {
   padding-top: 1em;  
 }
 footer .footer-col {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 footer .footer-below {
   padding: 25px 0;
@@ -646,7 +645,7 @@ div#maincontent {
 }
 .figcaption {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1em;
   color: #575651;
   text-align: justify;
 }
@@ -668,7 +667,8 @@ div#maincontent {
 /* ----------------------------------------------------------*/
 
 .page-content {
-  padding: 30px 0;
+  padding: 0px 0;
+  color: black;
   background-color: #fff;
 }
 
@@ -826,6 +826,7 @@ div#maincontent {
 }
 
 .post-content p {
+  color: black;
   text-align: justify;
 }
 
@@ -849,4 +850,8 @@ div#maincontent {
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
+}
+
+.youtube{
+  text-align: center;
 }
