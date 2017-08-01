@@ -42,7 +42,7 @@ h7{
   font-size: 1.4em;
 }
 h2.web-presence{
-  font-size: 3em;
+  font-size: 2.2em;
 }
 h2.projects{
   padding-bottom: 1em;
@@ -51,7 +51,7 @@ h2.projects{
   padding-top: 5em;
 }
 h2.projects.font{
-  font-size: 3em;
+  font-size: font-size: 2.2em;
   padding-top: 25px;
 }
 h2.project-description-title{
@@ -127,6 +127,7 @@ header .hi { font-size: 1.3em; }
   }
   header .intro-text .name {
     font-size: 6em;
+    letter-spacing: 3px;
   }
 }
 .navbar {
@@ -618,7 +619,7 @@ div#maincontent {
   text-align: center;
 }
 .fig img {
-  max-width: 98%;
+  max-width: 100%;
 }
 .figleft img {
   max-width: 50%;
@@ -793,7 +794,7 @@ div#maincontent {
   text-align: center;
 }
 .fig img {
-  max-width: 98%;
+  max-width: 100%;
 }
 .figleft img {
   max-width: 50%;
