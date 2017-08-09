@@ -17,7 +17,7 @@ I decided to base my architecture off of the Nvidia End to End Learning for Self
 
 I'm a fan of the elegant/clean nature of the VGG architecture. I understand it is no longer state of the art, but I still like their philosophy of simplicity.
 
-I'm also a huge fan of Batch Normalization. It makes weight initialization less important, and also improves the quality of the gradient flow during backprop (due to forcing our activations to have a normal distribution) ([Slide 69 cs231n Lecture 5](http://cs231n.stanford.edu/slides/winter1516_lecture5.pdf)). I added this in hopes of faster training, and a cleaner gradient flow.  
+I'm also a huge fan of Batch Normalization. It makes weight initialization less important, and also improves the quality of the gradient flow during backprop (due to forcing the inputs to each layer to have a normal distribution across each feature dimension) ([notes, slide 69](http://cs231n.stanford.edu/slides/winter1516_lecture5.pdf)). I added this in hopes of faster training, and a cleaner gradient flow.  
 
 **Overview of Architecture:**
 
