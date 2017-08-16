@@ -10,7 +10,7 @@ title: Vehicle Detection and Tracking
 
 ## Udacity Self Driving Car Nanodegree Project #5
 
-Knowing where other cars are while driving is obviously extremely important. Modern multi-sensored self driving cars use their sensors largely to make predictions about the cars surrounding them. In this project, we will only focus on one type of sensor: a camera.
+Knowing where other cars are while driving is obviously extremely important. Modern multi-sensored self driving cars use their sensors largely to make predictions about their location and environment, including the other cars surrounding them. In this project, we will only focus on one type of sensor: a camera.
 
 ## Histogram of Oriented Gradients (HOG)
 **Explain how (and identify where in your code) you extracted HOG features from the training images. Explain how you settled on your final choice of HOG parameters.**
